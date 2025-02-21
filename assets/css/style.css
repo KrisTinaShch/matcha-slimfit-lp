@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --main-red: #F54D4D;
+    --main-green: #447A5A;
+    --light-green: #98D43F;
+    --light-green-background: #E8EFEB;
+}
+@font-face {
+    font-family: 'Helen Regular';
+    src: url('../fonts/Helen-Bg-Regular.woff2') format('woff2'),
+         url('../fonts/Helen-Bg-Regular.woff') format('woff'),
+         url('../fonts/Helen-Bg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.on-desktop {
+    display: none;
+}
+
+
+h1.ks-heading-h1,
+h2.ks-heading-h2,
+h3.ks-heading-h3,
+h4.ks-heading-h4,
+h5.ks-heading-h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+h1.ks-heading-h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p.ks-paragraph {
+    font-family: 'Helen Regular',sans-serif;
+    margin: 1rem 0;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+}
+
+img.ks-image {
+    max-width: 100%;
+    height: auto;
+}
+b.ks-bold{
+    font-weight: bold;
+}
+.text-center {
+    text-align: center;
+}
+
+.ks-container {}
+
+.ks-col {
+    padding: 15px;
+}
+.ks-col-6{
+    
+}
+.ks-col-12{
+    
+}
+.ks-buy-button__green {
+    color: #fff;
+    font-size: 2.5rem;
+    background: var(--light-green);
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+h1.ks-heading-h1 .red-accent {
+    background: var(--main-red);
+    color: #fff;
+    max-width: fit-content;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+
+/* Hero */
+.hero-slimfit-images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1em;
+}
+
+.hero .hero-badge {
+    position: absolute;
+    max-width: 30%;
+    top: 0;
+    left: 0.5rem;
+    transform: rotate(-20deg);
+}
+
+.hero h2.ks-heading-h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.hero .matcha-product-image {
+    width: 60%;
+}
+
+.hero .matcha-product-testimonials {
+    width: 35%;
+}
+
+.hero .hero-images {
+    padding: 0;
+}
+
+.hero .hero-undertext {
+    background: var(--main-green);
+    display: flex;
+    padding: 5rem 0 2rem 0;
+    margin-top: -4rem;
+}
+
+.hero .hero-undertext p.ks-paragraph {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1rem;
+    border-right: 2px solid #879057;
+}
+
+/* Medals */
+.medals {
+    background: #ECECEC;
+}
+
+.medals .medals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+
+/* Matcha Blend */
+.matcha-blend h2.ks-heading-h2 {
+    color: var(--main-green);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.matcha-blend h3.ks-heading-h3 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.matcha-blend .matcha-blend__bullets {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.matcha-blend .blend-bullets-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.matcha-blend .blend-bullets-item img.ks-image {
+    width: 30%;
+}
+
+.matcha-blend .blend-bullets-item h4.ks-heading-h4 {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-transform: none;
+    background: linear-gradient(90deg, rgba(168, 207, 112, 1) 0%, rgba(255, 255, 255, 1) 90%);
+    padding: 0.3rem;
+}
+
+.matcha-blend .blend-bullets-item p.ks-paragraph {
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Matcha Results + Slick dots */
+.matcha-results {
+    background: var(--light-green-background);
+    padding: 7rem 0;
+    margin-top: -2.5rem;
+}
+
+.matcha-results_title h2.ks-heading-h2 {
+    font-size: 3.3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.matcha-results_title h3.ks-heading-h3 {
+    font-size: 2.3rem;
+    margin-top: 0.5rem;
+    text-transform: initial;
+    text-align: center;
+    font-weight: 500;
+}
+
+.matcha-results_title p.ks-paragraph {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    background: var(--main-green);
+    width: fit-content;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+}
+
+.matcha-results .slick-slide {
+    margin: 0 10px;
+    width: 100%;
+}
+
+.matcha-results .sliders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.matcha-results .before-after-container {
+    position: relative;
+    width: 100%;
+    min-height: 25rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.matcha-results .before-image,
+.matcha-results .after-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.matcha-results .before-image img.ks-image,
+.matcha-results .after-image img.ks-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.matcha-results .after-image {
+    clip-path: inset(0 50% 0 0);
+}
+
+.matcha-results .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.matcha-results .slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    pointer-events: none;
+}
+
+.matcha-results .slider-handle::before {
+    content: "⟷";
+}
+
+
+.matcha-results .before-after-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: white;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.matcha-results .before-after__slider-item {
+    margin-top: 2.5rem;
+}
+
+.matcha-results .before-after__slider-item .before-after__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.matcha-results .before-after__slider-item .before-after__text p.ks-paragraph {
+    margin: 0;
+    font-weight: bold;
+}
+
+.matcha-results .before-after__slider-item .before-after__text small {
+    font-family: "Roboto", serif;
+    font-size: 0.7rem;
+}
+
+.matcha-results .slider-handle {
+    pointer-events: auto;
+    cursor: grab;
+}
+
+.matcha-results .slider-handle:active {
+    cursor: grabbing;
+}
+
+
+.matcha-results .slick-dots {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.matcha-results .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: transparent;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+
+.matcha-results .slick-dots li.slick-active {
+    background: #111;
+    border-color: #111;
+}
+
+.matcha-results .slick-dots li button {
+    font-size: 0;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Matcha Testimonial */
+
+.matcha-results__testimonial {
+    margin-top: 4rem;
+}
+
+.matcha-results__testimonial .testimonial-container__image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.matcha-results__testimonial .testimonial-container__image .testimonial-image__elements {
+    width: 60%;
+}
+
+.matcha-results__testimonial .testimonial-container__image .testimoial-girl__image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid var(--main-green);
+}
+
+.matcha-results__testimonial .testimonial-container__image .testimonial-image__elements .testimonial-quote {
+    max-width: 20%;
+}
+
+.matcha-results__testimonial .testimonial-container__image .testimonial-image__elements p.ks-paragraph {
+    margin: 0;
+    margin-top: 1rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.matcha-results__testimonial .testimonial-container__image .testimonial-image__elements .testimonial-verified {
+    max-width: 70%;
+}
+
+.matcha-results__testimonial .testimonial-container__text p.ks-paragraph {
+    font-style: italic;
+    padding: 0 1rem;
+}
+
+
+/* Animated Reviews */
+.animated-reviews {
+    background-color: var(--light-green-background);
+}
+
+.animated-reviews h2.ks-heading-h2 {
+    font-size: 4rem;
+    color: var(--main-green);
+    text-align: center;
+    font-weight: 500;
+}
+
+.animated-reviews h3.ks-heading-h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.animated-reviews__background {
+    padding: 2rem 0;
+    margin: 2rem 0;
+    max-height: 30rem;
+    background-image: url(../images/trustpilot.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center 0;
+    position: relative;
+    animation: moveBackground 15s ease-in-out infinite alternate;
+}
+
+/* Trustupilot Section and Buy Button */
+.buy-button__trustpilot {
+    padding: 2rem 0;
+}
+
+/* how it works?  */
+.how-it-works {
+    text-align: center;
+}
+
+.how-it-works h2.ks-heading-h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.how-it-works h2.ks-heading-h2 span.green-color {
+    color: var(--main-green);
+}
+
+.how-it-works h3.ks-heading-h3 {
+    color: #fff;
+    background: var(--main-red);
+    width: fit-content;
+    margin: 1rem auto;
+    text-transform: inherit;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.how-it-works p.ks-paragraph {
+    font-size: 1rem;
+}
+
+/* Ingredients */
+.how-it-works .ingredients-slider .ingredient-item {
+    background: var(--light-green-background);
+    border: 1px solid var(--main-green);
+    border-radius: 20px;
+    padding: 0 0.2rem;
+}
+
+.how-it-works .ingredients-slider .ingredient-images_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.how-it-works .ingredients-slider .ingredient-images_container .ingredient-main-image {
+    max-width: 80%;
+}
+
+.how-it-works .ingredients-slider .ingredient-images_container .ingredient-icons {
+    width: 2.5rem;
+}
+
+.how-it-works .ingredients-slider .ingredient-text_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.how-it-works .ingredients-slider .ingredient-text_container p.ks-paragraph {
+    margin: 0;
+    margin-bottom: 0.4rem;
+    color: var(--main-green);
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-left: 5px;
+}
+
+.how-it-works .ingredients-slider .ingredient-text_container p.ks-paragraph.ingredient-plus {
+    color: #fff;
+    background: var(--main-green);
+    height: 1.3rem;
+    width: 1.3rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-left: 0;
+}
+
+.how-it-works .ingredients-slider .slick-slide {
+    margin: 0 5px;
+}
+
+.how-it-works .ingredients-slider .slick-dots {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.how-it-works .ingredients-slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: transparent;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+
+.how-it-works .ingredients-slider .slick-dots li.slick-active {
+    background: #111;
+    border-color: #111;
+}
+
+.how-it-works .ingredients-slider .slick-dots li button {
+    font-size: 0;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* How it works popups */
+
+.ingredient-popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.ingredient-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ingredient-popup-content {
+    background: var(--light-green-background);
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    border: 2px solid var(--main-green);
+}
+
+.ingredient-popup.visible .ingredient-popup-content {
+    transform: translateY(0);
+}
+
+.ingredient-popup-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ingredient-popup-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-transform: inherit;
+    font-weight: 500;
+    color: var(--main-green);
+    margin-bottom: 10px;
+}
+
+
+p.ingredient-popup-description {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.ingredient-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--main-green);
+    font-weight: 900;
+}
+
+
+.ingredient-popup-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.ingredient-popup-icons img.ks-image {
+    width: 30%;
+}
+
+
+/* Preparing */
+.matcha-preparing {
+    margin: 5rem 0 1rem 0;
+    padding: 0rem 1rem;
+}
+
+.matcha-preparing .preparing-image {
+    border: 2px solid var(--main-green);
+    border-radius: 20px;
+}
+
+.matcha-preparing h2.ks-heading-h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.matcha-preparing h2.ks-heading-h2 span.green-color {
+    color: var(--main-green);
+}
+
+.matcha-preparing .matcha-preparation__steps .matcha-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.matcha-preparing .matcha-preparation__steps .matcha-step img.ks-image {
+    width: 10%;
+}
+
+.matcha-preparing .matcha-preparation__steps .matcha-step p.ks-paragraph {
+    font-size: 0.9rem;
+}
+
+/* Matcha Badges */
+.matcha-signatures .matcha-signatures-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.matcha-signatures .matcha-signatures-grid img.ks-image {
+    max-width: 30%;
+}
+
+/* Matcha diferences */
+.matcha-differences .matcha-differences__right {
+    background: var(--main-green);
+}
+
+.matcha-differences h2.ks-heading-h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.matcha-differences p.ks-paragraph {
+    color: #707070;
+    margin-bottom: 5rem;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center 0;
+    }
+
+    50% {
+        background-position: center 100%;
+    }
+
+    100% {
+        background-position: center 0;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    .on-desktop {
+        display: block;
+    }
+
+    .on-mobile {
+        display: none;
+    }
+}
